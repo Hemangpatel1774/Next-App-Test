@@ -25,6 +25,7 @@ export default function Home() {
         alert('User added successfully..!');
         const data = await response.json();
         console.log("User added:", data);
+        alert('User added successfully');
         setUser({ name: "", age: "" }); // Reset form
       } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
